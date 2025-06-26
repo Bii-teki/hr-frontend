@@ -7,8 +7,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Input } from '@/components/ui/input';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Image from 'next/image';
-import illustrations from "../../../public/images/Illustrations.png"
-import dashboard from "../../../public/images/dashboard.png"
 import jobkit from "../../../public/images/jobs.png"
 import Navbar from '../components/navbar';
 import { useAuth } from '../context/AuthContext';
