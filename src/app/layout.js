@@ -1,14 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import { AuthProvider } from '../app/context/AuthContext';
+import { Toaster } from 'react-hot-toast';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"], 
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-poppins", 
+  display: "swap", 
 });
 
 export const metadata = {
@@ -18,11 +17,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className={`${poppins.variable}`}>
+      <body className="antialiased">
+        <AuthProvider>{children}
+          
+        </AuthProvider>
       </body>
     </html>
   );
