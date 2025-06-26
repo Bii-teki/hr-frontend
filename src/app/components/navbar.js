@@ -50,7 +50,7 @@ function Navbar() {
     if (currentIndex !== -1) {
       setActiveIndex(currentIndex)
     }
-  }, [pathname])
+  }, [pathname, navigation])
 
   const handleNavigation = (href, index) => (e) => {
     e.preventDefault()

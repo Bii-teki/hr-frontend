@@ -46,7 +46,6 @@ export function AuthProvider({ children }) {
         token: data.token
       };
       setUser(userData);
-      console.log("User logged in:", userData);
       return userData;
     } catch (error) {
       clearAuth();

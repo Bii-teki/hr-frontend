@@ -15,7 +15,7 @@ export const RouteGuard = ({ children, requireAuth = true, allowedRoles = [] }) 
     } else if (allowedRoles.length && !allowedRoles.includes(user?.role)) {
       router.replace('/unauthorized');
     }
-  }, [loading, user]);
+  }, [loading, user, router, requireAuth, allowedRoles]);
 
   if (requireAuth && (loading || !user)) return <div className="text-center p-8">Loading...</div>;
 
