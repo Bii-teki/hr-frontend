@@ -58,7 +58,7 @@ const handleLogin = async (e) => {
     return (
         <div className="min-h-screen bg-gradient-to-br bg-login from-bg-login-foreground to-login-foreground2 flex items-center justify-center p-4">
             <div className="relative w-full max-w-4xl mx-auto">
-                <div className="absolute -top-20 left-0 w-[1200px] h-[900px] z-0">
+                <div className="absolute -top-28 left-0 w-[1200px] h-[900px] z-0">
                     <Image
                         src="/images/Vector6.png"
                         fill
@@ -67,7 +67,7 @@ const handleLogin = async (e) => {
                         priority
                     />
                 </div>
-                <div className="absolute -top-30 -left-20 w-[1200px] h-[900px] z-0">
+                <div className="absolute -top-36 -left-28 w-[1200px] h-[900px] z-0">
                     <Image
                         src="/images/Vector7.png"
                         fill
